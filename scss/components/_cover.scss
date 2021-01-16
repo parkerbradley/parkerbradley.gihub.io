@@ -1,0 +1,67 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+@import '../utilities/keyframes';
+
+//
+.nav {
+  z-index: 100;
+}
+
+.cover {
+  background-image: url('../images/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  color: $font-inverse;
+}
+
+.lead {
+  color: $font-inverse;
+  text-transform: uppercase;
+}
+
+.social-icon {
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  @include tablet {
+    height: 40px;
+  }
+}
+
+.social-icon[alt^="github"] {
+  fill: #fff;
+}
+
+.cover-down {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+  @include tablet {
+    bottom: 20px;
+  }
+}
+
+.fa-chevron-circle-down {
+  color: $font-inverse;
+  font-size: 40px;
+  @include tablet {
+    font-size: 50px;
+  }
+}
