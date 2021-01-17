@@ -1,0 +1,56 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+@import '../utilities/keyframes';
+
+#resume {
+  scroll-margin-top: 56px;
+  //scroll-behavior: smooth;
+}
+
+.job-entry {
+  color: $font;
+}
+
+$timeline-space: 2rem;
+$timeline-space-mobile: 1rem;
+
+.job-details {
+  padding-left: $timeline-space-mobile;
+  border-left: 3px solid #000;
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: $font;
+    &:hover {
+      color: darken($font, 30%);
+    }
+  }
+  @include tablet {
+    padding-left: $timeline-space;
+    border-left: 5px solid #000;
+  }
+}
+
+.fa-location-arrow {
+  margin-right: 1rem;
+  font-size: .75rem;
+}
+
+.job-year {
+  padding-right: $timeline-space-mobile;
+  h3{
+    width: 49px;
+    font-size: 1.25rem;
+    @include tablet {
+      width: 68px;
+      font-size: 1.5rem;
+    }
+  }
+  @include tablet {
+    padding-right: $timeline-space;
+  }
+}
