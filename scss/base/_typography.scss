@@ -1,2 +1,11 @@
 @import '../utilities/mixins';
 @import '../utilities/variables';
+
+#resume h2,
+#resume h3,
+#my-work h2,
+#my-work h3,
+#about h2,
+#about h3 {
+  text-transform: uppercase;
+}
