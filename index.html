@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Bradley Parker | Portfolio</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
     <!-- nav -->
     <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
       <div class="container">
@@ -31,7 +31,7 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
             </li>
           </ul>
         </div>
@@ -150,7 +150,7 @@
                 <img src="images/prescription-strength.png" class="card-img-top" alt="prescription strength candle company">
                 <div class="card-body">
                   <h3 class="h5">Prescription Strength Co.</h3>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Customized the Shopify.liquid theme to provide a more tailored experience for a local candle company.</p>
                   <span class="badge rounded-pill bg-dark me-1">Javascript</span><span class="badge rounded-pill bg-dark me-1">Liquid</span><span class="badge rounded-pill bg-dark me-1">Sass</span><span class="badge rounded-pill bg-dark">HTML</span>
                 </div>
               </div>
@@ -160,7 +160,7 @@
                 <img src="images/fetch-api.png" class="card-img-top" alt="fetch api">
                 <div class="card-body">
                   <h3 class="h5">Employee Directory</h3>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Utilized an API fetch for 12 random employees, map their details to cards, and provide expanded details in a modal.</p>
                   <span class="badge rounded-pill bg-dark me-1">Javascript</span><span class="badge rounded-pill bg-dark me-1">Sass</span><span class="badge rounded-pill bg-dark">HTML</span>
                 </div>
               </div>
@@ -170,7 +170,7 @@
                 <img src="images/dashboard.png" class="card-img-top" alt="dashboard">
                 <div class="card-body">
                   <h3 class="h5">Dashboard</h3>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Extensive CSS grid and flex utilization for a custom traffic and social engagement analytics dashboard.</p>
                   <span class="badge rounded-pill bg-dark me-1">Javascript</span><span class="badge rounded-pill bg-dark me-1">Sass</span><span class="badge rounded-pill bg-dark">HTML</span>
                 </div>
               </div>
@@ -180,7 +180,7 @@
                 <img src="images/filterable-gallery.png" class="card-img-top" alt="filterable gallery">
                 <div class="card-body">
                   <h3 class="h5">Filterable Gallery</h3>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Utilized CSS grid for a responsive photo gallery that is also filterable by caption text.</p>
                   <span class="badge rounded-pill bg-dark me-1">Javascript</span><span class="badge rounded-pill bg-dark me-1">CSS</span><span class="badge rounded-pill bg-dark">HTML</span>
                 </div>
               </div>
@@ -190,7 +190,7 @@
                 <img src="images/wheel-of-fortune.png" class="card-img-top" alt="wheel of fortune">
                 <div class="card-body">
                   <h3 class="h5">Game Show App</h3>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Developed a game show app. Users can guess letters that either fill in the word or reduce life.</p>
                   <span class="badge rounded-pill bg-dark me-1">Javascript</span><span class="badge rounded-pill bg-dark me-1">CSS</span><span class="badge rounded-pill bg-dark">HTML</span>
                 </div>
               </div>
@@ -200,7 +200,7 @@
                 <img src="images/style-guide.png" class="card-img-top" alt="style guide">
                 <div class="card-body">
                   <h3 class="h5">Style Guide</h3>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">HTML/CSS mobile-responsive style guide using grid and flex.</p>
                   <span class="badge rounded-pill bg-dark me-1">Sass</span><span class="badge rounded-pill bg-dark">HTML</span>
                 </div>
               </div>
@@ -220,8 +220,11 @@
               <span class="badge rounded-pill bg-dark me-1">Javascript</span><span class="badge rounded-pill bg-dark me-1">Sass</span><span class="badge rounded-pill bg-dark me-1">CSS</span><span class="badge rounded-pill bg-dark me-1">Liquid</span><span class="badge rounded-pill bg-dark">HTML</span>
             </div>
             <div class="about-text col-lg-7">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit ut aliquam purus. Phasellus vestibulum lorem sed risus ultricies. Vestibulum morbi blandit cursus risus. Nisl vel pretium lectus quam id leo in vitae turpis. Non arcu risus quis varius quam quisque id. Malesuada fames ac turpis egestas maecenas pharetra convallis. Diam quam nulla porttitor massa. Vulputate dignissim suspendisse in est ante in nibh.</p>
-              <p>Convallis aenean et tortor at risus viverra. Turpis egestas maecenas pharetra convallis. Donec ultrices tincidunt arcu non sodales. Ac tortor dignissim convallis aenean. Eget sit amet tellus cras adipiscing enim. Neque vitae tempus quam pellentesque nec nam aliquam sem. At elementum eu facilisis sed odio morbi quis. Enim sed faucibus turpis in eu mi bibendum neque egestas. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Ornare arcu odio ut sem nulla pharetra diam. Leo a diam sollicitudin tempor id eu nisl nunc.</p>
+              <p>Part marketer, part developer, and full-time geek, I believe good online marketing starts with smart, clean, code to deliver the absolute best user experience.</p>
+              <p>I am passionate about data-driven designs that improve the user's experience online. I believe simple outweights fussy designs, and users shouldn't have to think when they visit a website.</p>
+              <p>Every website is an investment in an organization's online marketing. My goal is to help them put their best voice forward to make a good first impression, and exceed their growth goals.</p>
+              <p>If you feel the same way, let's get in touch!</p>
+              <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
             </div>
             <div class="about-img col-md-12 col-lg-3">
               <img class="img-fluid" src="images/me.jpeg" alt="bradley parker">
@@ -231,7 +234,38 @@
 
       </div>
       <!-- /about -->
+      <!-- Modal -->
+
     </main>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">CONTACT ME</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/f/xbjpwjda" method="POST">
+              <p class="form-error small">* Denotes Required Fields</p>
+              <div class=" mb-3">
+                <p><label for="name">*Your Name</label></p>
+                <input id="name" name="name" type="text" class="form-control" placeholder="First Last" aria-label="Username" aria-describedby="basic-addon1" required>
+              </div>
+              <div class=" mb-3">
+                <p><label for="email">*Email Address</label></p>
+                <input id="email" name="email" type="text" class="form-control" placeholder="example@example.com" aria-label="email" aria-describedby="basic-addon1" required>
+              </div>
+              <div class="mb-3">
+                <p><label for="message">Message</label></p>
+                <textarea id="message" name="message" class="form-control" aria-label="With textarea"></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-secondary" onclick="formValidator()" value="Send">Submit</button>
+              <p class="small" id="form-error" style="display: none; color: red;">Please Complete The Required Fields</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="pt-3 footer">
         <div class="container d-flex justify-content-between">
