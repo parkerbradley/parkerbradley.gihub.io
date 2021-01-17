@@ -10,10 +10,18 @@ nav {
   background-color: #000;
 }
 
-.navbar-brand,
+.navbar-brand {
+  color: $font-inverse-dark;
+  text-transform: uppercase;
+  &:hover {
+    color: $font-inverse-dark;
+  }
+}
+
 .nav-link,
 .navbar-toggler {
   color: $font-inverse-dark;
+  text-transform: uppercase;
   &:hover {
     color: $font-inverse;
   }
