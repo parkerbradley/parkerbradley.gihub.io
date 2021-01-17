@@ -12,3 +12,7 @@ coverHeight();
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 target: '#navbar-example'
 })
+
+var today = new Date();
+var year = today.getFullYear();
+document.getElementById('year').innerHTML = year;
