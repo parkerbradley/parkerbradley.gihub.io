@@ -1,0 +1,38 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+@import '../utilities/keyframes';
+
+#my-work {
+  scroll-margin-top: 56px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  url('../images/portfolio-background.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  h2 {
+    color: $font-inverse;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+}
+
+.card {
+  width: 100%;
+  border: none;
+  h3 {
+    text-align: center;
+    color: $font;
+  }
+  p {
+    color: $font;
+  }
+}

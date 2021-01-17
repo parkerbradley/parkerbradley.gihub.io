@@ -4,7 +4,15 @@
 
 #resume {
   scroll-margin-top: 56px;
-  //scroll-behavior: smooth;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  background:
+    linear-gradient(to right, rgba(255,255,255,1) 60%, rgba(255,255,255,0)),
+    url(../images/resume-texture.jpg);
+  h2,
+  h3 {
+    text-transform: uppercase;
+  }
 }
 
 .job-entry {

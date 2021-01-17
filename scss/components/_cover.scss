@@ -8,20 +8,12 @@
 }
 
 .cover {
-  background-image: url('../images/cover.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url('../images/cover.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 0;
   position: relative;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  z-index: 1;
-  position: absolute;
-  top: 0;
 }
 
 h1 {
@@ -31,6 +23,10 @@ h1 {
 .lead {
   color: $font-inverse;
   text-transform: uppercase;
+  &-line {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .social-icon {

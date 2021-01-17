@@ -2,6 +2,10 @@
 @import '../utilities/variables';
 @import '../utilities/keyframes';
 
+body {
+  position: relative;
+}
+
 nav {
   background-color: #000;
 }
@@ -17,4 +21,9 @@ nav {
 
 .navbar-toggler-icon {
   background-image: url('../icons/hamburger.svg');
+}
+
+.nav-link.active,
+.nav-link.focus {
+  color: $font-inverse !important;
 }
